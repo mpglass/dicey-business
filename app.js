@@ -1,5 +1,5 @@
 let diceArray = []
-let numArray = []
+
 
 
 class Dice {
@@ -8,14 +8,16 @@ class Dice {
         this.div = $(`<div class="dice">${this.value}</div>`)
         $('.container').append(this.div)
         diceArray.push(this)
-        numArray.push(this.value)
-        console.log(numArray)
+        
+        
         this.div.click(() => {
             this.value = Math.floor((Math.random() * 6) + 1);
             this.div.text(this.value);
         })
         this.div.dblclick(() => {
-            console.log('TWICE!')
+            this.div.remove();
+               let i = diceArray.indexOf(this);
+                diceArray.splice(i, 1);
         })
         
     }
@@ -42,8 +44,13 @@ $('#rollBtn').click(function () {
 })
 
 $('#sumBtn').click(function () {
-    console.log(numArray.reduce(sum));
-})
+   
+    let sum = 0
+    diceArray.forEach((die) => {
+         sum += die.value;
+        })
+console.log(sum);
+    })
 
 
 
