@@ -1,0 +1,61 @@
+#diceBtn {
+    border: 5px,solid, black;
+    background-color: blueviolet;
+    font-size: 35px;
+    color: cyan;
+    margin: 5px;
+    border-radius: 14px;
+}
+#rollBtn {
+    border: 5px,solid, black;
+    background-color: blueviolet;
+    font-size: 35px;
+    color: cyan;
+    margin: 5px;
+    border-radius: 14px;
+}
+#sumBtn {
+    border: 5px,solid, black;
+    background-color: blueviolet;
+    font-size: 35px;
+    color: cyan;
+    margin: 5px;
+    border-radius: 14px;
+}
+.nav {
+    margin: 2rem;
+    border: 2px;
+    border-radius: 14px;
+    border-color: deeppink;
+    background-color: rgba(225, 29, 133, 0.351);
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.dice {
+    height: 100px;
+    width: 100px;
+    margin: 1.5px;
+    border: 3px solid black; 
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font: outline;
+}
+.container {
+    margin: 2px;
+    padding: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 2px;
+    border-style: solid;
+    border-radius: 14px;
+    border-color: deeppink;
+    background-color: rgba(225, 29, 133, 0.351);
+}
